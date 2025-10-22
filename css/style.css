@@ -1,23 +1,33 @@
 /* Ajuste geral para todas as imagens */
 img {
-  max-width: 80%;   /* deixa as imagens menores que a largura do container */
-  height: auto;     /* mantém a proporção correta */
+  max-width: 80%;    /* reduz o tamanho das imagens comuns */
+  height: auto;      /* mantém proporção */
   display: block;
-  margin: 0 auto;   /* centraliza as imagens */
-  border-radius: 8px; /* opcional: cantos levemente arredondados */
+  margin: 0 auto;    /* centraliza */
+  border-radius: 8px; /* opcional, bordas suaves */
 }
 
-/* Ajuste específico para o banner */
+/* Banner sem corte de imagem */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 24px;
+  background-color: #f1f5f9; /* cor de fundo neutra, opcional */
+}
+
 .banner img {
-  width: 100%;      /* ocupa a largura total */
-  height: 200px;    /* altura menor */
-  object-fit: cover; /* mantém proporção e corta o excesso */
-  border-radius: 2; /* banner sem bordas arredondadas */
+  width: auto;       /* imagem no tamanho real até o limite da tela */
+  max-width: 100%;   /* impede que passe da tela */
+  height: auto;      /* mantém proporção natural */
+  object-fit: contain; /* exibe a imagem inteira, sem cortar */
+  display: inline-block;
 }
 
-/* Ajuste para imagens dentro de cards (como na página de projetos) */
+/* Imagens dos cards (projetos) */
 .card img {
-  max-width: 70%;
+  max-width: 70%;    /* menor que o banner, mas ainda proporcional */
   height: auto;
+  display: block;
   margin: 0 auto 16px auto;
+  object-fit: contain; /* mantém a imagem inteira visível */
 }
