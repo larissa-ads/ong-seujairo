@@ -9,10 +9,10 @@ img {
 
 /* Ajuste específico para o banner */
 .banner img {
-  width: 90%;      /* ocupa a largura total */
+  width: 100%;      /* ocupa a largura total */
   height: 200px;    /* altura menor */
   object-fit: cover; /* mantém proporção e corta o excesso */
-  border-radius: 0; /* banner sem bordas arredondadas */
+  border-radius: 2; /* banner sem bordas arredondadas */
 }
 
 /* Ajuste para imagens dentro de cards (como na página de projetos) */
