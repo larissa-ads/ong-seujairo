@@ -1,0 +1,23 @@
+/* Ajuste geral para todas as imagens */
+img {
+  max-width: 80%;   /* deixa as imagens menores que a largura do container */
+  height: auto;     /* mantém a proporção correta */
+  display: block;
+  margin: 0 auto;   /* centraliza as imagens */
+  border-radius: 8px; /* opcional: cantos levemente arredondados */
+}
+
+/* Ajuste específico para o banner */
+.banner img {
+  width: 100%;      /* ocupa a largura total */
+  height: 250px;    /* altura menor */
+  object-fit: cover; /* mantém proporção e corta o excesso */
+  border-radius: 0; /* banner sem bordas arredondadas */
+}
+
+/* Ajuste para imagens dentro de cards (como na página de projetos) */
+.card img {
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto 16px auto;
+}
