@@ -9,8 +9,8 @@ img {
 
 /* Ajuste específico para o banner */
 .banner img {
-  width: 100%;      /* ocupa a largura total */
-  height: 250px;    /* altura menor */
+  width: 90%;      /* ocupa a largura total */
+  height: 200px;    /* altura menor */
   object-fit: cover; /* mantém proporção e corta o excesso */
   border-radius: 0; /* banner sem bordas arredondadas */
 }
